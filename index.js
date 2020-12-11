@@ -257,15 +257,30 @@ function get20s(array){
   // return twentiethCentury;
 
   //---------Re-write function with filter method:
-  const twentiethCentury = [];
-  array.filter( artist => {
-    let birth = Number(artist.years.split(' - ')[0]);
-    let death = Number(artist.years.split(' - ')[1]);
-    if (birth >= 1900 && death <= 2000) {
-      twentiethCentury.push(artist.name);
-    }
-  })
-  return twentiethCentury;
+  // const twentiethCentury = [];
+  // array.filter( artist => {
+  //   let birth = Number(artist.years.split(' - ')[0]);
+  //   let death = Number(artist.years.split(' - ')[1]);
+  //   if (birth >= 1900 && death <= 2000) {
+  //     twentiethCentury.push(artist.name);
+  //   }
+  // })
+  // return twentiethCentury;
+
+  //---------Re-write function with reduce method:
+  // return array.reduce( (container, artist) => {
+  //   if (Number(artist.years.split(' - ')[0]) >= 1900 && Number(artist.years.split(' - ')[1]) <= 2000) {
+  //     container.push(artist.name);
+  //   }
+  //   return container;
+  // }, [])
+
+  //---------Re-write function with condensed reduce method:
+  return array.reduce( (container, artist) => {
+    Number(artist.years.split(' - ')[0]) >= 1900 && Number(artist.years.split(' - ')[1]) <= 2000 ? 
+      container.push(artist.name) : null; 
+      return container;
+  }, [])
 }
 
 
