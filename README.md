@@ -22,10 +22,10 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
-3. How would you explain the concept of a variable to someone new to programming?
-4. What is the purpose of using functions in code?
+1. How would you describe accessibility on the web to someone new to programming? **Answer:** Accessibility is a way to build web pages so that they can be consumed by everyone. Specifically, it means building with semantic tags, alt attributes, responsive units and manageable file sizes so anyone can navigate it independent of their circumstances (visual, size- or color-modified, hearing, tactile, slower connections). 
+2. Talk about 3 different things you can do to ensure your website is accessible. **Answer:** HTML structured with semantic tags; images contain alt attributes with concise but accurate descriptions; fonts are set to 62.5% at the html level and using rem units thereafter.
+3. How would you explain the concept of a variable to someone new to programming? **Answer:** One can think of the variables concept as shelves in a classroom. A variable is like the container where a student can store its backpack. The label on the container is the variable name. The backpack is the value stored in the container.
+4. What is the purpose of using functions in code? **Answer:** Functions are ways to store code blocks or actionable logic to be used in other parts of the code. Rather than re-write the logic every time is needed, one can store the logic in a function and refer to it by name when needed without having to re-write the logic itself.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
