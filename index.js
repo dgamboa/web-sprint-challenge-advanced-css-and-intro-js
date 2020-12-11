@@ -324,7 +324,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(array){
   //---------Write function with for loop:
-  const prolificArtists = [];
+  // const prolificArtists = [];
   // for (let i = 0; i < array.length; i++) {
   //   if (array[i].paintings > 100) {
   //     prolificArtists.push(array[i].name);
@@ -333,12 +333,20 @@ function lotsOfArt(array){
   // return prolificArtists;
 
   //---------Re-write with filter method:
-  array.filter( artist => {
-    if (artist.paintings > 100) {
-      prolificArtists.push(artist.name);
-    }
-  })
-  return prolificArtists;
+  // const prolificArtists = [];
+  // array.filter( artist => {
+  //   if (artist.paintings > 100) {
+  //     prolificArtists.push(artist.name);
+  //   }
+  // })
+  // return prolificArtists;
+
+  //---------Re-write with filter and reduce method:
+  return array.filter( artist => artist.paintings > 100 )
+              .reduce( (prolificArtists, artist) => {
+                prolificArtists.push(artist.name);
+                return prolificArtists;
+              }, [])
 }
 
 
