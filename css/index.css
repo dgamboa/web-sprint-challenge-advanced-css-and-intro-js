@@ -62,6 +62,9 @@ img {
 img:hover {	
     opacity: 80%;	
 }	
+#active-page {
+  font-weight: bold;
+}
 
 /*HEADER STYLES */
 header{
@@ -137,5 +140,63 @@ button:hover{
 
 /* Phone View */
 @media (max-width:500px){
-  
+  nav a {
+    font-size: 1.7rem;
+    line-height: 1rem;
+    padding: 2% 6%;
+  }
+
+  nav span {
+    border-left: 2px solid #626262;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-bottom: 1.5%;
+  }
+
+  .title-container button {
+    font-size: 1.3rem;
+    padding: 1.1% 4%;
+    border-radius: 4px;
+    border: 1px solid #626262;
+  }
+
+  .title-container div {
+    width: 100%;
+    background-size: 240%;
+    margin-bottom: 1%;
+  }
+
+  .title-container hr {
+    width: 100%;
+  }
+
+  section.artists-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.artist {
+    margin-top: 2%;
+    width: 80%;
+  }
+
+  .artist img {
+    height: 50%;
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  .artist a {
+    font-size: 1.6rem;
+    font-weight: lighter;
+  }
+
+  .bio {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    margin-bottom: 7%;
+  }
 }
