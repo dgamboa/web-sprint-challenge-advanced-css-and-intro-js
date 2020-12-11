@@ -245,14 +245,26 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
+  //---------Function with for loop:
+  // const twentiethCentury = [];
+  // for (let i = 0; i < array.length; i++) {
+  //   let birth = Number(array[i].years.split(' - ')[0]);
+  //   let death = Number(array[i].years.split(' - ')[1]);
+  //   if (birth >= 1900 && death <= 2000) {
+  //     twentiethCentury.push(array[i].name);
+  //   }
+  // }
+  // return twentiethCentury;
+
+  //---------Re-write function with filter method:
   const twentiethCentury = [];
-  for (let i = 0; i < array.length; i++) {
-    let birth = Number(array[i].years.split(' - ')[0]);
-    let death = Number(array[i].years.split(' - ')[1]);
+  array.filter( artist => {
+    let birth = Number(artist.years.split(' - ')[0]);
+    let death = Number(artist.years.split(' - ')[1]);
     if (birth >= 1900 && death <= 2000) {
-      twentiethCentury.push(array[i].name);
+      twentiethCentury.push(artist.name);
     }
-  }
+  })
   return twentiethCentury;
 }
 
@@ -374,7 +386,7 @@ function randomize(array){
 
 
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
- Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+ Use advanced array methods (.map, .reduce, .filter) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 
  
  
