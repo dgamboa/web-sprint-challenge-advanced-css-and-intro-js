@@ -345,11 +345,14 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
-
-    /* Code here */
-
+function getHTML(data){
+  for (const index in data) {
+    console.log(`<div class="artist">\n  <img src="${data[index].wikipedia}"/>\n  <a href="${data[index].wikipedia}">Vincent Van Gogh</a>\n  <div class = "bio">${data[index].bio}</div>\n</div>`)
   }
+}
+
+// console.log(getHTML(artists));
+// Note: the current artists data set doesn't have image links so the above function includes the wikipedia link as a temporary fill. We would need to update the artists data object to include image links for all artists for this to be fully functional.
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
