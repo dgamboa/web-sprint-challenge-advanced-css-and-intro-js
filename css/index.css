@@ -138,6 +138,36 @@ button:hover{
     width:100%;
 }
 
+/* Tablet View */
+@media (max-width:800px){
+  nav a {
+    font-size: 1.7rem;
+    line-height: 1rem;
+    padding: 2% 6%;
+  }
+
+  div.artist {
+    margin-top: 2%;
+    width: 43%;
+  } 
+
+  .artist img {
+    height: 43%;
+    margin-bottom: 5%;
+  }
+
+  .artist a {
+    font-size: 2.0rem;
+    font-weight: lighter;
+  }
+
+  .bio {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 4% 0 7% 0;
+  }
+}
+
 /* Phone View */
 @media (max-width:500px){
   nav a {
@@ -198,35 +228,5 @@ button:hover{
     font-size: 1.1rem;
     line-height: 1.2rem;
     margin-bottom: 7%;
-  }
-}
-
-/* Tablet View */
-@media (max-width:800px){
-  nav a {
-    font-size: 1.7rem;
-    line-height: 1rem;
-    padding: 2% 6%;
-  }
-
-  div.artist {
-    margin-top: 2%;
-    width: 43%;
-  } 
-
-  .artist img {
-    height: 43%;
-    margin-bottom: 5%;
-  }
-
-  .artist a {
-    font-size: 2.0rem;
-    font-weight: lighter;
-  }
-
-  .bio {
-    font-size: 1.5rem;
-    line-height: 1.7rem;
-    margin: 4% 0 7% 0;
   }
 }
